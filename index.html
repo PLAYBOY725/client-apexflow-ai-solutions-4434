@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexFlow AI Solutions | Enterprise Automation & AI Agency in Gurugram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link { transition: all 0.3s ease; }
+        .nav-link:hover { color: #3b82f6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900 font-sans antialiased">
+
+    <!-- Urgency Bar -->
+    <div class="bg-primary text-white py-2 px-4 text-center text-xs sm:text-sm font-medium">
+        <span>⭐ Rated 4.9/5 by 120+ Enterprises in Gurugram</span>
+        <span class="mx-4 opacity-50">|</span>
+        <a href="tel:+919876543210" class="hover:underline">Call now: +91 98765 43210</a>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-extrabold font-heading text-primary">Apex<span class="text-accent">Flow</span></div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#contact" class="nav-link">Book Now</a>
+            </div>
+            <a href="#contact" class="hidden md:block bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-700 transition">Book Consultation</a>
+            <button id="mobile-menu-btn" class="md:hidden">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="container mx-auto px-6 pt-20 pb-24 text-center">
+        <div class="inline-block px-4 py-1 mb-6 text-sm font-bold bg-blue-50 text-accent rounded-full border border-blue-100">AI-Powered Business Transformation</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold font-heading mb-8 leading-tight text-primary">Automate Your Business with <span class="gradient-text">Cutting-Edge AI.</span></h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">From intelligent chatbots to autonomous workflows, we help enterprises in Cyber City scale efficiency and reduce overhead.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="px-8 py-4 bg-accent text-white rounded-xl font-bold hover:shadow-lg hover:shadow-blue-500/30 transition">Get Your Strategy</a>
+            <a href="https://wa.me/919876543210?text=Hello%20ApexFlow%20AI%20Solutions,%20I%20want%20to%20inquire%20about%20your%20services." target="_blank" class="px-8 py-4 bg-white border border-gray-200 rounded-xl font-bold text-primary hover:border-gray-300 transition">WhatsApp Us</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold font-heading text-center mb-16">Core AI Solutions</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-6 flex items-center justify-center text-accent text-2xl">💬</div>
+                    <h3 class="text-xl font-bold mb-4">Support Chatbots</h3>
+                    <p class="text-gray-600 mb-6">Automate 80% of routine inquiries with context-aware AI support agents.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-6 flex items-center justify-center text-accent text-2xl">📧</div>
+                    <h3 class="text-xl font-bold mb-4">Lead Outreach</h3>
+                    <p class="text-gray-600 mb-6">Personalized email automation that converts prospects while you sleep.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-6 flex items-center justify-center text-accent text-2xl">⚡</div>
+                    <h3 class="text-xl font-bold mb-4">Workflow Automation</h3>
+                    <p class="text-gray-600 mb-6">Eliminate manual bottlenecks with custom-coded enterprise AI logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6 max-w-xl">
+            <div class="bg-primary text-white p-8 md:p-12 rounded-3xl">
+                <h2 class="text-3xl font-bold mb-2">Book Your Consultation</h2>
+                <p class="mb-8 opacity-80">Get a bespoke roadmap for your business automation.</p>
+                <form id="quote-form" class="space-y-4">
+                    <input type="text" placeholder="Name" required class="w-full p-4 rounded-xl bg-white/10 border border-white/20 placeholder-white/50 text-white focus:outline-none focus:ring-2 focus:ring-accent">
+                    <input type="email" placeholder="Email" required class="w-full p-4 rounded-xl bg-white/10 border border-white/20 placeholder-white/50 text-white focus:outline-none focus:ring-2 focus:ring-accent">
+                    <textarea placeholder="Tell us about your business goals" required class="w-full p-4 rounded-xl bg-white/10 border border-white/20 placeholder-white/50 text-white h-32 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                    <button type="submit" class="w-full bg-accent text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition">Request Strategy</button>
+                </form>
+                <div id="form-feedback" class="hidden mt-6 p-4 bg-green-500/20 border border-green-500 rounded-xl text-green-300 text-center">
+                    Message received! We will reach out within 24 hours.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-heading text-white text-xl mb-4">ApexFlow AI Solutions</p>
+            <p class="text-sm">Cyber City, DLF Phase 2, Gurugram, Haryana</p>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:contact@apexflowaisolutions.com">contact@apexflowaisolutions.com</a>
+            </div>
+            <p class="mt-8 text-xs">&copy; 2024 ApexFlow AI Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form Handling
+        const form = document.getElementById('quote-form');
+        const feedback = document.getElementById('form-feedback');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            feedback.classList.remove('hidden');
+        });
+
+        // Simple Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        menuBtn.addEventListener('click', () => {
+            alert('Navigation Menu Open');
+        });
+    </script>
+</body>
+</html>
